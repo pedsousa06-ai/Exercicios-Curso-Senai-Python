@@ -1,15 +1,14 @@
-def somar_positivos():
-    soma = 0
-    numero = int(input("Digite um número / 0 para sair: "))
-
-    while numero != 0:
-        soma += numero
-        numero = int(input("Digite um número / 0 para sair: "))
-
-    print(f"A soma dos números é: {soma}")
-
-
-somar_positivos()
-
-
+#Função recursiva
+# def fatorial(n):
+#     if n == 0 or n == 1:
+#         return 1
+#     else:
+#         return n * fatorial(n - 1)
     
+def fatorial_iterativo(n):
+    if n < 0:
+        return None
+    fat = 1
+    for i in range(1, n + 1):
+        fat = fat * i
+    return fat
