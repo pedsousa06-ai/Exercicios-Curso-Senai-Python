@@ -32,8 +32,9 @@ while True:
     try:
         opcao = int(input("\nDigite uma das opções: "))
     except ValueError:
-        print("Digite apenas números (0 a 4)!")
+        print("Erro: Digite apenas números (0 a 4)!")
         continue
+
 
     if opcao == 0:
         print("Saindo da calculadora...........")
@@ -59,3 +60,4 @@ while True:
 
     elif opcao == 4:
         print("Resultado:", dividir(n1, n2))
+
